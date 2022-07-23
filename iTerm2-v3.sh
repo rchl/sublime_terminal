@@ -33,7 +33,7 @@ if (( ! $RUNNING )); then
 	osascript<<END
 	tell application "iTerm"
 		tell current window
-            activate
+			activate
 			tell current session
 				write text "$CD_CMD"
 			end tell

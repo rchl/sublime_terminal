@@ -37,7 +37,7 @@ class TerminalSelector():
     default = None
 
     @staticmethod
-    def get(terminal_key):
+    def get(terminal_key = None):
         package_dir = os.path.join(sublime.packages_path(), installed_dir)
         terminal = get_setting(terminal_key)
         if terminal:
@@ -197,8 +197,7 @@ class OpenTerminalCommand(sublime_plugin.WindowCommand, TerminalCommand):
         self.run_terminal(path, terminal, parameters)
 
 
-class OpenTerminalProjectFolderCommand(sublime_plugin.WindowCommand,
-        TerminalCommand):
+class OpenTerminalProjectFolderCommand(sublime_plugin.WindowCommand, TerminalCommand):
     def run(self, paths=[], parameters=None):
         path = self.get_path(paths)
         if not path:
