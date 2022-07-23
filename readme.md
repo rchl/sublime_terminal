@@ -13,12 +13,9 @@ Download [Package Control](https://packagecontrol.io/) and use the *Package Cont
 
 ## Usage
 
- - **Open Terminal at File**
-     Press *ctrl+shift+t* on Windows and Linux, or *cmd+shift+t* on OS X
- - **Open Terminal at Project Folder**
-     Press *ctrl+alt+shift+t* on Windows and Linux, or *cmd+alt+shift+t* on OS X
+The package provides two commands (**Open Terminal at File** and **Open Terminal at Project Folder**) that can be triggered either using key bindings, command palette or via the editor context menu and the sidebar context menus.
 
-In addition to the key bindings, terminals can also be opened via the editor context menu and the sidebar context menus.
+By default key bindings are not enabled and have to be set manually by opening `Preferences: Terminal Key Bindings` from the command palette.
 
 ## Package Settings
 
